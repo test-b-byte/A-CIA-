@@ -1,0 +1,28 @@
+{
+  "name": "a-cia-",
+  "version": "1.0.0",
+  "description": "![Agent Op Structure](Agent_OpStructure.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/test-b-byte/A-CIA-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/test-b-byte/A-CIA-/issues"
+  },
+  "homepage": "https://github.com/test-b-byte/A-CIA-#readme",
+  "devDependencies": {
+    "@types/node": "^26.6.2",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^5.11.1"
+  }
+}
