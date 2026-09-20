@@ -1,1 +1,1 @@
-![Agent Op Structure](Agent Op Structure.png)
+![Agent_OpStructure](Agent Op Structure.png)
