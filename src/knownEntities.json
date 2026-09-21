@@ -1,0 +1,21 @@
+{
+  "labs": [
+    "DeepMind",
+    "OpenAI",
+    "Anthropic",
+    "FAIR",
+    "Meta AI",
+    "Google Research",
+    "Microsoft Research",
+    "Boston Dynamics",
+    "NVIDIA Research",
+    "Toyota Research Institute"
+  ],
+  "researchers": [
+    "Yann LeCun",
+    "Sergey Levine",
+    "Chelsea Finn",
+    "Pieter Abbeel",
+    "Fei-Fei Li"
+  ]
+}

@@ -25,7 +25,7 @@ async function requestJson(requestUrl: string): Promise<string> {
 // primaryUrl is HN's algorithm-curated front page.
 // backupUrl is plain newest submissions, sorted by time.
 // If the front page ever changes shape or goes down, the backup still gives usable data, just less curated.
-const primaryUrl = "https://hn.algolia.com/api/v1/search?tags=front_page";
+const primaryUrl = "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=50";
 const backupUrl = "https://hn.algolia.com/api/v1/search_by_date?tags=story";
 
 /** Fetches current Hacker News stories. Tries the front page first. Falls back to newest stories if that fails. */

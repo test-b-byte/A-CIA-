@@ -20,7 +20,7 @@ async function requestJson(requestUrl: string): Promise<string> {
 
 // MARKER: this endpoint is unofficial and undocumented by Hugging Face itself.
 // It could change shape or disappear without notice. Watch this one first if the pipeline breaks.
-const primaryUrl = "https://huggingface.co/api/daily_papers?limit=20";
+const primaryUrl = "https://huggingface.co/api/daily_papers?limit=50";
 const backupUrl = "https://huggingface.co/api/daily_papers";
 
 /** Fetches Hugging Face's daily papers list. Falls back to the undated base endpoint if the primary fails. */

@@ -12,7 +12,7 @@ async function requestXml(requestUrl: string): Promise<string> {
 
 /** Fetches recent papers from arXiv for one category, e.g. "cs.LG". Tries https first, falls back to http if that fails. */
 export async function fetchArxivPapers(arxivCategory: string): Promise<string> {
-  const queryParams = `search_query=cat:${arxivCategory}&sortBy=submittedDate&sortOrder=descending&max_results=20`;
+  const queryParams = `search_query=cat:${arxivCategory}&sortBy=submittedDate&sortOrder=descending&max_results=50`;
   const primaryUrl = `https://export.arxiv.org/api/query?${queryParams}`;
   const backupUrl = `http://export.arxiv.org/api/query?${queryParams}`;
 
