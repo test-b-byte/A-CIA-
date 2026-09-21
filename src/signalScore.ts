@@ -147,6 +147,10 @@ const topicFiltered = filterByTopics(allPapers);
 const unseenFiltered = filterOutSeen(topicFiltered);
 
 logCandidates(unseenFiltered);
+console.log(`Hacker Net raw: ${hnPapers.length}`);
 
-const rankedPapers = rankBySignal(unseenFiltered);
-console.log(rankedPapers.map((paper) => `[${paper.source}] ${paper.title}`));
+const hnFiltered = filterByTopics(hnPapers);
+console.log(`Hacker Net after filter alone: ${hnFiltered.length}`);
+if (hnFiltered.length > 0) {
+  console.log(hnFiltered.map((p) => p.title));
+}

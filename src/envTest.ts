@@ -1,0 +1,1 @@
+console.log("Key loaded:", process.env.ANTHROPIC_API_KEY ? "yes" : "no");
