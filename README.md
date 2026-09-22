@@ -1,61 +1,62 @@
 ![Agent Op Structure](Architecture_Updated.png)
 
 
-# ACIA pipeline — stage reference
 
-Four phases, ten stages. Data flows one direction, top to bottom, phase to phase. Nothing in a later stage can trigger an earlier one to re-run — a failure halts the run and waits for you to look at the log.
+# CIAI pipeline — stage reference (v0.8)
+
+Four phases, ten numbered stages (7 retired, not renumbered). Data flows one direction, top to bottom, phase to phase. Nothing in a later stage triggers an earlier one to re-run — a failure halts the run and waits for manual review.
 
 ---
 
 ## Phase 1: Collection
 
 ### Stage 1 — Source collectors
-Three independent functions, one per source: arXiv, Hacker News, Papers with Code. Each hits its own API, asks for recent items (new submissions for arXiv, front-page/AI-tagged stories for HN, trending repos for PwC), and returns whatever shape that API natively gives back — arXiv's own field names, HN's own field names, PwC's own field names. None of the three know the others exist, and none of them reshape or filter anything yet. If one source's API is down, the other two keep working.
+Three independent functions: arXiv, Hacker News, Hugging Face daily papers. Papers with Code was dropped after confirming Meta shut it down in 2025; Hugging Face's daily papers feed replaced it as the third source. Each collector fetches raw data in its own native shape (arXiv returns XML, HN and Hugging Face return JSON), with a timeout and a primary/backup fallback. Hugging Face's endpoint is unofficial and undocumented, so its collector carries an explicit warning that the shape could change without notice. HN's collector was switched from the fixed 30-item front page to the larger recent-stories feed, since the front page was too small a pool.
 
 ### Stage 2 — Normalizer
-Takes the three different raw shapes from stage 1 and forces them into one common shape — the `PaperRecord` — with fields like id, title, abstract, url, source, timestamp, and raw signal data. Also dedupes: if the same paper showed up via arXiv and got mentioned on HN, this merges it into one record instead of two. Everything after this stage only ever sees the one standardized shape, regardless of where a paper actually came from.
+Each source has its own adapter that converts raw data into one shared shape, `PaperRecord` (id, title, abstractOrSnippet, url, source, timestamp, rawSignalData). No inheritance — each adapter is a small, independent function that only has to conform to the same output type. Every adapter validates its input defensively (missing fields, empty results, malformed structure) before producing a record.
 
 ---
 
 ## Phase 2: Filtering
 
 ### Stage 3 — Hard filter
-Pure code, no LLM call. Checks each paper's category against a topic list — key topics of interest (KTOI) — read from an editable config file (e.g. `topics.json`), not hardcoded into the pipeline. Starting set: defense, autonomy, robotics, and whatever else gets added over time; arXiv category tags (cs.LG, cs.AI, cs.RO, cs.CV, cs.MA) map into these topics rather than being the filter itself. Anything outside the topic list gets dropped. Editing this file — adding a topic, retiring one — never requires touching pipeline code. Cuts the daily pool from several hundred candidates down to a couple hundred at most.
+Pure code, no LLM call. Two separate topic lists, not one: `topics.json` (technical KTOI list — autonomy, robotics, reinforcement learning, defense, etc.) filters arXiv and Hugging Face; `hnContextTopics.json` (a broader trade, manufacturing, defense-policy, geopolitics list) filters HN specifically, since HN's front page rarely intersects with narrow technical terms. The filter checks a paper's source and picks the matching list automatically.
 
 ### Stage 4 — Signal scorer
-Still no LLM call. Attaches the "attention" numbers gathered in stage 1 — HN upvotes, PwC stars/forks, any other raw popularity signal — to each surviving paper. This step doesn't judge quality, only visibility: it answers "how much is this being noticed today," not "is this good."
+Still no LLM call. Scores each paper using real signals specific to its source: Hugging Face uses upvotes plus GitHub stars (stars weighted double, since a star reflects real use, not just a click); HN uses points only (comment count deliberately excluded, since high comment count often means controversy, not quality); arXiv has no engagement signal at all, so it is scored by recency instead (decaying linearly over one week) rather than an arbitrary flat number. A separate bonus applies if a paper's title or abstract mentions a known lab or researcher, read from an editable `knownEntities.json`. Topic-match strength also contributes, weighted higher if a topic appears in the title rather than only the abstract.
 
 ### Stage 5 — Shortlist
-Sorts the scored pool by that attention number and keeps only the top N (roughly 10–15). Everything else is dropped from consideration for the day. This is the last cheap, free step — everything past this point costs real API money, so its whole job is to hand the next stage the smallest, most relevant pile possible.
+Per-source, not a single combined cut. arXiv and Hugging Face are each capped at their top 5, since Hugging Face's raw score ceiling is structurally higher and would otherwise crowd out every other source. HN is passed through uncapped, since it is a low-yield source most days and was never at risk of dominating.
 
 ---
 
 ## Phase 3: Judgment
 
 ### Stage 6 — Deep-read ranker
-The expensive, judgment-heavy stage. For each shortlisted paper, pulls more than just the abstract (intro + results, ideally) and scores it against a rubric — novelty, rigor, robustness, significance — plus a relevance boost. The relevance boost reads from its own config, separate from stage 3's KTOI file: where KTOI is the broad topic list used as a hard filter, this list is the specific subprocesses/elements *within* a topic (e.g. under robotics: manipulation, SLAM, sim-to-real transfer) used only as a soft weight. Whether this ends up as a standalone file or nested under each KTOI entry is still open. Every candidate gets a score and a written justification, not just the winner, so the day's decision is fully auditable after the fact.
+The one real LLM stage in filtering/judgment. Every shortlisted paper (title + abstract, real full-text reading not yet built) is sent to Claude and scored on four dimensions: novelty (1-5), rigor (1-7, weighted heavy, since method quality matters most), robustness (1-5), significance (1-7, weighted heavy, since relevance matters most). The model returns strict JSON; a defensive parser extracts the JSON object from the response regardless of stray prose or code fences the model might add around it. Every candidate is scored and ranked, not just the eventual winners, so the day's decision is auditable.
 
-### Stage 7 — Fallback check
-A cheap conditional check, no LLM call. If the top score from stage 6 doesn't clear a minimum bar, this stage swaps in a foundational or classic paper instead of a weak "best of a bad day" pick. Keeps the daily habit consistent even on days when nothing new is actually worth reading.
+### Stage 7 — Fallback check (retired)
+Originally designed to swap in a classic paper on a weak day. Removed after observing that the daily volume of genuinely interesting candidates made a weak-day fallback unnecessary. The number is kept retired rather than renumbering the stages that follow.
 
 ---
 
 ## Phase 4: Output
 
-### Stage 8 — Breakdown writer
-One LLM call, on the single winning paper only (never the whole shortlist, to keep cost down). Writes the actual daily breakdown — problem, method, result, why it matters, a caveat — in Ciai's voice.
+### Stage 8 — Report builder
+Produces two distinct deliverables, not one. First, a lightweight scan of the full shortlist: title, source, and link for every candidate, no LLM call. Second, a Who/What/When/Where/Why/How write-up for the top 3 papers by score, one LLM call each: Who is authors/institution if identifiable, What is the core goal or discovery, When is the publish date, Where is a research location or one mentioned in the text, Why is the motivating problem, How is the contribution and method. Any field with no real answer is left blank rather than invented, the prompt explicitly forbids fabricating a detail to fill a slot.
 
 ### Stage 9 — Delivery
-No LLM call. Sends the finished breakdown out by email. Kept as its own stage, separate from the writing logic, so the delivery channel can change later without touching how the breakdown gets written.
+Sends both deliverables in one email via Resend. Working and tested end to end. Currently limited to sending only to the account owner's own address, since Resend's free tier only allows sending to other recipients from a verified custom domain, sending to friends is a real, deliberate later step, not yet done.
 
 ### Stage 10 — Archive & log
-No LLM call. Records everything about the run: the full candidate pool, every score and rationale from stage 6, the final pick, delivery status, timestamp, model version used, and actual spend. This is what makes the whole pipeline traceable after the fact, and it's the data you'd look at to check for real quality drift over time — not the tone of a given day's greeting, but whether the scores and picks are holding up.
+Written, not yet wired into the live run. Appends one JSON-lines record per run (timestamp, every candidate's score, the chosen top 3) to a running archive file, and marks the chosen top 3's ids as seen in `seenPapers.json` so they cannot be re-selected on a future day. `markAsSeen` is only ever called here, at the true end of the pipeline, never earlier, a paper that merely scored well but wasn't chosen is not blocked from resurfacing tomorrow.
 
 ---
 
 ## Cost and reliability notes, by stage
 
-- Stages 1–5, 7, 9, 10: free or near-free — no LLM involved.
-- Stage 6: the main cost driver. Budget-gated live, mid-run — if cumulative spend approaches the $1 cap, the pipeline stops scoring further candidates and ranks on what it already has, rather than overshooting.
-- Stage 8: small, fixed cost regardless of shortlist size, since it only ever processes the winner.
-- No stage retries itself automatically on failure. A failure logs, halts, and waits for manual re-authorization to run again.
+- Stages 1-5, 7 (retired), 9: free or near-free, no LLM involved.
+- Stage 6: the main cost driver, but cheap in practice, a full run of about 14 candidates on a fast, small model has cost roughly a cent.
+- Stage 8: one small LLM call per top-3 paper for the 5W write-up; the shortlist scan itself is free.
+- Semantic Scholar was built (collector, adapter, retry-with-backoff on rate limits) but is not currently wired into the live pipeline, due to persistent rate limiting on the free, unauthenticated tier.
