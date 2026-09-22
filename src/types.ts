@@ -10,3 +10,13 @@ export interface PaperRecord {
   timestamp: string;        // ISO 8601 format (e.g. "2026-09-17T17:41:51Z") — convert non-ISO source timestamps here, not downstream.
   rawSignalData: Record<string, unknown>; // Stage 4 reads this. Shape varies by source — HN's has "score", arXiv's has "categories".
 }
+
+export interface ScoredPaper {
+  paper: PaperRecord;
+  novelty: number;
+  rigor: number;
+  robustness: number;
+  significance: number;
+  totalScore: number;
+  justification: string;
+}
