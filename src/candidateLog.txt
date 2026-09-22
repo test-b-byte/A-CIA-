@@ -889,3 +889,432 @@
   [huggingFace] What Does Privileged Information Add to On-Policy Self-Distillation?
   [huggingFace] DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression
   [huggingFace] UFO: Chain-of-Evaluation for Omni-Condition Alignment in Multi-Modal Image Generation
+
+2026-09-22 (52 candidates)
+  [arxiv] Blind Thermodynamic Ontology Discovery from Anonymous Experiments
+  [arxiv] Leveraging Industrial Foundation Models at the Edge of Particle Physics Detectors via Distillation Learning and Hardware Co-design
+  [arxiv] Bayesian Filtering in Physical Systems via Test-time Trained Flow Matching
+  [arxiv] Discovering Physical Representation Languages
+  [arxiv] One to More, More to One: Category-Aware Iterative Expert Training for Software Engineering Agents
+  [arxiv] The Evidence Ladder for Reinforcement Learning in Healthcare: From Retrospective Policies to Trusted Interventions
+  [arxiv] Machine-Interpretable Information: Compiling Documents into Searchable and Readable Protocol States
+  [arxiv] CSC: Calibrated Simplicity for Conflict-Aware Social Bot Detection in the LLM Era
+  [arxiv] ValueDiff: Value-Geometric KV Cache Eviction for Sink-Suppressed LLMs
+  [arxiv] Latent Telepathy: Multi-Robot Communication with Self-Supervised Perceptual Latents
+  [arxiv] CTRL: Control-Based Time Series Forecasting with LLM-Guided Residual Learning
+  [arxiv] Robot World Models Are Not Invariant to How the Actions Are Written
+  [arxiv] Proximal Residual Value Functions for Consistent Planning and Real-Time Execution
+  [arxiv] Triggers and Diagnostics for LLM-Based Interpretability Failures in Active Inference Agents
+  [arxiv] Toscani-Fourier Distance on Probability Measures: Wasserstein Control, Topological Equivalence on Model Classes, and Duality
+  [arxiv] Real-Time Plasma State Prediction via FPGA-Accelerated Quantized Recurrent Probabilistic Neural Networks
+  [arxiv] Provably Efficient Reinforcement Learning in Continuous-Time Episodic MDPs with Poisson Decision Epochs
+  [arxiv] Perplexity Cost Understates What Activation Quantisation Breaks
+  [arxiv] An LLM-Assisted AutoML Framework for Intrusion Detection in IoT Networks
+  [arxiv] Counting and Covering in Nearest-Neighbour Representations of Boolean Functions
+  [arxiv] Measured Joules, Learned Routes: Learning to Route for Energy-Efficient LLM Serving
+  [arxiv] MolSC: Leveraging Substituent Contributions to Enhance Fine-grained Molecular Understanding in LLMs
+  [hackernews] ECB will invest in tokenised securities, and settle trades on its own new rail
+  [hackernews] First NetHack Ascension by an LLM
+  [hackernews] Why Russia's New Jet-Powered Drones Are Harder to Stop
+  [hackernews] You're predictable. That's a good thing: Can personal LLMs learn your judgment?
+  [huggingFace] SteerDuplex: Steerable Duplex Speech Dialogue Models
+  [huggingFace] From Pretraining to Proficiency: Real-World Subtask RL for Long-Horizon Manipulation with Minimal Human Intervention
+  [huggingFace] SiliconBench: Speed, Memory, and Fidelity for LLM Serving on Unified-Memory Desktops
+  [huggingFace] BI-Agent and BI-Bench: Towards Automating End-to-End Business Intelligence
+  [huggingFace] GAVEL: Graph World Models for Verified and Efficient Long-Horizon LLM Task Planning
+  [huggingFace] IntBMoE: Integrating Block-Level Conditioning into Expert Composition for Full-Participation Mixture-of-Experts
+  [huggingFace] OmniVChat: Synthesizing, Benchmarking, and Training for Native Audio-Visual Dialogue
+  [huggingFace] Geometry of Values: Task Vector Composition for Ethical Preference Alignment in Language Models
+  [huggingFace] TeleAntiFraud 2.0: A Refreshable, Profile-Grounded, and Audio-Based Benchmark for Telecom Fraud Detection
+  [huggingFace] MoME: Mixture-of-Memory Embeddings for Context-Aware Sparse Lookup
+  [huggingFace] MLLMs Hallucinate when Information Distribution Drifts in Synergy Heads
+  [huggingFace] EvoOntology: A Self-Evolving Ontology Layer for Data Agents
+  [huggingFace] CodeMidas: Scaling Agentic Coding RL Environments from Code Itself
+  [huggingFace] GraphSkillEvo: Evolutionary Optimization of Graph-Structured Agent Skills
+  [huggingFace] MintAct: A Unified Visual Agent for Digital Environments
+  [huggingFace] When AI Reviews Train AI Reviewers: Scientific-Judgment Collapse and Mitigation
+  [huggingFace] Verifiable Social Reasoning for LLM Assistants
+  [huggingFace] Self-Evolving Search Index
+  [huggingFace] Sample Count Is Not Enough: Candidate-Generation Strategy Shapes the Energy and Performance of LLM Test-Time Scaling
+  [huggingFace] VākQA: A Benchmark and Evaluation Study for Telugu Spoken Factoid Question Answering
+  [huggingFace] Don't Mask the Environment: Observation Supervision Changes How Agents Explore Under RL
+  [huggingFace] PACT: Can Enterprise AI Assistants Be Trusted Under Pressure?
+  [huggingFace] RetireOPD: Self-Retiring On-Policy Distillation for Agentic Reinforcement Learning
+  [huggingFace] What Does Privileged Information Add to On-Policy Self-Distillation?
+  [huggingFace] DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression
+  [huggingFace] UFO: Chain-of-Evaluation for Omni-Condition Alignment in Multi-Modal Image Generation
+
+2026-09-22 (52 candidates)
+  [arxiv] Blind Thermodynamic Ontology Discovery from Anonymous Experiments
+  [arxiv] Leveraging Industrial Foundation Models at the Edge of Particle Physics Detectors via Distillation Learning and Hardware Co-design
+  [arxiv] Bayesian Filtering in Physical Systems via Test-time Trained Flow Matching
+  [arxiv] Discovering Physical Representation Languages
+  [arxiv] One to More, More to One: Category-Aware Iterative Expert Training for Software Engineering Agents
+  [arxiv] The Evidence Ladder for Reinforcement Learning in Healthcare: From Retrospective Policies to Trusted Interventions
+  [arxiv] Machine-Interpretable Information: Compiling Documents into Searchable and Readable Protocol States
+  [arxiv] CSC: Calibrated Simplicity for Conflict-Aware Social Bot Detection in the LLM Era
+  [arxiv] ValueDiff: Value-Geometric KV Cache Eviction for Sink-Suppressed LLMs
+  [arxiv] Latent Telepathy: Multi-Robot Communication with Self-Supervised Perceptual Latents
+  [arxiv] CTRL: Control-Based Time Series Forecasting with LLM-Guided Residual Learning
+  [arxiv] Robot World Models Are Not Invariant to How the Actions Are Written
+  [arxiv] Proximal Residual Value Functions for Consistent Planning and Real-Time Execution
+  [arxiv] Triggers and Diagnostics for LLM-Based Interpretability Failures in Active Inference Agents
+  [arxiv] Toscani-Fourier Distance on Probability Measures: Wasserstein Control, Topological Equivalence on Model Classes, and Duality
+  [arxiv] Real-Time Plasma State Prediction via FPGA-Accelerated Quantized Recurrent Probabilistic Neural Networks
+  [arxiv] Provably Efficient Reinforcement Learning in Continuous-Time Episodic MDPs with Poisson Decision Epochs
+  [arxiv] Perplexity Cost Understates What Activation Quantisation Breaks
+  [arxiv] An LLM-Assisted AutoML Framework for Intrusion Detection in IoT Networks
+  [arxiv] Counting and Covering in Nearest-Neighbour Representations of Boolean Functions
+  [arxiv] Measured Joules, Learned Routes: Learning to Route for Energy-Efficient LLM Serving
+  [arxiv] MolSC: Leveraging Substituent Contributions to Enhance Fine-grained Molecular Understanding in LLMs
+  [hackernews] ECB will invest in tokenised securities, and settle trades on its own new rail
+  [hackernews] First NetHack Ascension by an LLM
+  [hackernews] Why Russia's New Jet-Powered Drones Are Harder to Stop
+  [hackernews] You're predictable. That's a good thing: Can personal LLMs learn your judgment?
+  [huggingFace] SteerDuplex: Steerable Duplex Speech Dialogue Models
+  [huggingFace] From Pretraining to Proficiency: Real-World Subtask RL for Long-Horizon Manipulation with Minimal Human Intervention
+  [huggingFace] SiliconBench: Speed, Memory, and Fidelity for LLM Serving on Unified-Memory Desktops
+  [huggingFace] BI-Agent and BI-Bench: Towards Automating End-to-End Business Intelligence
+  [huggingFace] GAVEL: Graph World Models for Verified and Efficient Long-Horizon LLM Task Planning
+  [huggingFace] IntBMoE: Integrating Block-Level Conditioning into Expert Composition for Full-Participation Mixture-of-Experts
+  [huggingFace] OmniVChat: Synthesizing, Benchmarking, and Training for Native Audio-Visual Dialogue
+  [huggingFace] Geometry of Values: Task Vector Composition for Ethical Preference Alignment in Language Models
+  [huggingFace] TeleAntiFraud 2.0: A Refreshable, Profile-Grounded, and Audio-Based Benchmark for Telecom Fraud Detection
+  [huggingFace] MoME: Mixture-of-Memory Embeddings for Context-Aware Sparse Lookup
+  [huggingFace] MLLMs Hallucinate when Information Distribution Drifts in Synergy Heads
+  [huggingFace] EvoOntology: A Self-Evolving Ontology Layer for Data Agents
+  [huggingFace] CodeMidas: Scaling Agentic Coding RL Environments from Code Itself
+  [huggingFace] GraphSkillEvo: Evolutionary Optimization of Graph-Structured Agent Skills
+  [huggingFace] MintAct: A Unified Visual Agent for Digital Environments
+  [huggingFace] When AI Reviews Train AI Reviewers: Scientific-Judgment Collapse and Mitigation
+  [huggingFace] Verifiable Social Reasoning for LLM Assistants
+  [huggingFace] Self-Evolving Search Index
+  [huggingFace] Sample Count Is Not Enough: Candidate-Generation Strategy Shapes the Energy and Performance of LLM Test-Time Scaling
+  [huggingFace] VākQA: A Benchmark and Evaluation Study for Telugu Spoken Factoid Question Answering
+  [huggingFace] Don't Mask the Environment: Observation Supervision Changes How Agents Explore Under RL
+  [huggingFace] PACT: Can Enterprise AI Assistants Be Trusted Under Pressure?
+  [huggingFace] RetireOPD: Self-Retiring On-Policy Distillation for Agentic Reinforcement Learning
+  [huggingFace] What Does Privileged Information Add to On-Policy Self-Distillation?
+  [huggingFace] DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression
+  [huggingFace] UFO: Chain-of-Evaluation for Omni-Condition Alignment in Multi-Modal Image Generation
+
+2026-09-22 (52 candidates)
+  [arxiv] Blind Thermodynamic Ontology Discovery from Anonymous Experiments
+  [arxiv] Leveraging Industrial Foundation Models at the Edge of Particle Physics Detectors via Distillation Learning and Hardware Co-design
+  [arxiv] Bayesian Filtering in Physical Systems via Test-time Trained Flow Matching
+  [arxiv] Discovering Physical Representation Languages
+  [arxiv] One to More, More to One: Category-Aware Iterative Expert Training for Software Engineering Agents
+  [arxiv] The Evidence Ladder for Reinforcement Learning in Healthcare: From Retrospective Policies to Trusted Interventions
+  [arxiv] Machine-Interpretable Information: Compiling Documents into Searchable and Readable Protocol States
+  [arxiv] CSC: Calibrated Simplicity for Conflict-Aware Social Bot Detection in the LLM Era
+  [arxiv] ValueDiff: Value-Geometric KV Cache Eviction for Sink-Suppressed LLMs
+  [arxiv] Latent Telepathy: Multi-Robot Communication with Self-Supervised Perceptual Latents
+  [arxiv] CTRL: Control-Based Time Series Forecasting with LLM-Guided Residual Learning
+  [arxiv] Robot World Models Are Not Invariant to How the Actions Are Written
+  [arxiv] Proximal Residual Value Functions for Consistent Planning and Real-Time Execution
+  [arxiv] Triggers and Diagnostics for LLM-Based Interpretability Failures in Active Inference Agents
+  [arxiv] Toscani-Fourier Distance on Probability Measures: Wasserstein Control, Topological Equivalence on Model Classes, and Duality
+  [arxiv] Real-Time Plasma State Prediction via FPGA-Accelerated Quantized Recurrent Probabilistic Neural Networks
+  [arxiv] Provably Efficient Reinforcement Learning in Continuous-Time Episodic MDPs with Poisson Decision Epochs
+  [arxiv] Perplexity Cost Understates What Activation Quantisation Breaks
+  [arxiv] An LLM-Assisted AutoML Framework for Intrusion Detection in IoT Networks
+  [arxiv] Counting and Covering in Nearest-Neighbour Representations of Boolean Functions
+  [arxiv] Measured Joules, Learned Routes: Learning to Route for Energy-Efficient LLM Serving
+  [arxiv] MolSC: Leveraging Substituent Contributions to Enhance Fine-grained Molecular Understanding in LLMs
+  [hackernews] ECB will invest in tokenised securities, and settle trades on its own new rail
+  [hackernews] First NetHack Ascension by an LLM
+  [hackernews] Why Russia's New Jet-Powered Drones Are Harder to Stop
+  [hackernews] You're predictable. That's a good thing: Can personal LLMs learn your judgment?
+  [huggingFace] SteerDuplex: Steerable Duplex Speech Dialogue Models
+  [huggingFace] From Pretraining to Proficiency: Real-World Subtask RL for Long-Horizon Manipulation with Minimal Human Intervention
+  [huggingFace] SiliconBench: Speed, Memory, and Fidelity for LLM Serving on Unified-Memory Desktops
+  [huggingFace] BI-Agent and BI-Bench: Towards Automating End-to-End Business Intelligence
+  [huggingFace] GAVEL: Graph World Models for Verified and Efficient Long-Horizon LLM Task Planning
+  [huggingFace] IntBMoE: Integrating Block-Level Conditioning into Expert Composition for Full-Participation Mixture-of-Experts
+  [huggingFace] OmniVChat: Synthesizing, Benchmarking, and Training for Native Audio-Visual Dialogue
+  [huggingFace] Geometry of Values: Task Vector Composition for Ethical Preference Alignment in Language Models
+  [huggingFace] TeleAntiFraud 2.0: A Refreshable, Profile-Grounded, and Audio-Based Benchmark for Telecom Fraud Detection
+  [huggingFace] MoME: Mixture-of-Memory Embeddings for Context-Aware Sparse Lookup
+  [huggingFace] MLLMs Hallucinate when Information Distribution Drifts in Synergy Heads
+  [huggingFace] EvoOntology: A Self-Evolving Ontology Layer for Data Agents
+  [huggingFace] CodeMidas: Scaling Agentic Coding RL Environments from Code Itself
+  [huggingFace] GraphSkillEvo: Evolutionary Optimization of Graph-Structured Agent Skills
+  [huggingFace] MintAct: A Unified Visual Agent for Digital Environments
+  [huggingFace] When AI Reviews Train AI Reviewers: Scientific-Judgment Collapse and Mitigation
+  [huggingFace] Verifiable Social Reasoning for LLM Assistants
+  [huggingFace] Self-Evolving Search Index
+  [huggingFace] Sample Count Is Not Enough: Candidate-Generation Strategy Shapes the Energy and Performance of LLM Test-Time Scaling
+  [huggingFace] VākQA: A Benchmark and Evaluation Study for Telugu Spoken Factoid Question Answering
+  [huggingFace] Don't Mask the Environment: Observation Supervision Changes How Agents Explore Under RL
+  [huggingFace] PACT: Can Enterprise AI Assistants Be Trusted Under Pressure?
+  [huggingFace] RetireOPD: Self-Retiring On-Policy Distillation for Agentic Reinforcement Learning
+  [huggingFace] What Does Privileged Information Add to On-Policy Self-Distillation?
+  [huggingFace] DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression
+  [huggingFace] UFO: Chain-of-Evaluation for Omni-Condition Alignment in Multi-Modal Image Generation
+
+2026-09-22 (52 candidates)
+  [arxiv] Blind Thermodynamic Ontology Discovery from Anonymous Experiments
+  [arxiv] Leveraging Industrial Foundation Models at the Edge of Particle Physics Detectors via Distillation Learning and Hardware Co-design
+  [arxiv] Bayesian Filtering in Physical Systems via Test-time Trained Flow Matching
+  [arxiv] Discovering Physical Representation Languages
+  [arxiv] One to More, More to One: Category-Aware Iterative Expert Training for Software Engineering Agents
+  [arxiv] The Evidence Ladder for Reinforcement Learning in Healthcare: From Retrospective Policies to Trusted Interventions
+  [arxiv] Machine-Interpretable Information: Compiling Documents into Searchable and Readable Protocol States
+  [arxiv] CSC: Calibrated Simplicity for Conflict-Aware Social Bot Detection in the LLM Era
+  [arxiv] ValueDiff: Value-Geometric KV Cache Eviction for Sink-Suppressed LLMs
+  [arxiv] Latent Telepathy: Multi-Robot Communication with Self-Supervised Perceptual Latents
+  [arxiv] CTRL: Control-Based Time Series Forecasting with LLM-Guided Residual Learning
+  [arxiv] Robot World Models Are Not Invariant to How the Actions Are Written
+  [arxiv] Proximal Residual Value Functions for Consistent Planning and Real-Time Execution
+  [arxiv] Triggers and Diagnostics for LLM-Based Interpretability Failures in Active Inference Agents
+  [arxiv] Toscani-Fourier Distance on Probability Measures: Wasserstein Control, Topological Equivalence on Model Classes, and Duality
+  [arxiv] Real-Time Plasma State Prediction via FPGA-Accelerated Quantized Recurrent Probabilistic Neural Networks
+  [arxiv] Provably Efficient Reinforcement Learning in Continuous-Time Episodic MDPs with Poisson Decision Epochs
+  [arxiv] Perplexity Cost Understates What Activation Quantisation Breaks
+  [arxiv] An LLM-Assisted AutoML Framework for Intrusion Detection in IoT Networks
+  [arxiv] Counting and Covering in Nearest-Neighbour Representations of Boolean Functions
+  [arxiv] Measured Joules, Learned Routes: Learning to Route for Energy-Efficient LLM Serving
+  [arxiv] MolSC: Leveraging Substituent Contributions to Enhance Fine-grained Molecular Understanding in LLMs
+  [hackernews] ECB will invest in tokenised securities, and settle trades on its own new rail
+  [hackernews] First NetHack Ascension by an LLM
+  [hackernews] Why Russia's New Jet-Powered Drones Are Harder to Stop
+  [hackernews] You're predictable. That's a good thing: Can personal LLMs learn your judgment?
+  [huggingFace] SteerDuplex: Steerable Duplex Speech Dialogue Models
+  [huggingFace] From Pretraining to Proficiency: Real-World Subtask RL for Long-Horizon Manipulation with Minimal Human Intervention
+  [huggingFace] SiliconBench: Speed, Memory, and Fidelity for LLM Serving on Unified-Memory Desktops
+  [huggingFace] BI-Agent and BI-Bench: Towards Automating End-to-End Business Intelligence
+  [huggingFace] GAVEL: Graph World Models for Verified and Efficient Long-Horizon LLM Task Planning
+  [huggingFace] IntBMoE: Integrating Block-Level Conditioning into Expert Composition for Full-Participation Mixture-of-Experts
+  [huggingFace] OmniVChat: Synthesizing, Benchmarking, and Training for Native Audio-Visual Dialogue
+  [huggingFace] Geometry of Values: Task Vector Composition for Ethical Preference Alignment in Language Models
+  [huggingFace] TeleAntiFraud 2.0: A Refreshable, Profile-Grounded, and Audio-Based Benchmark for Telecom Fraud Detection
+  [huggingFace] MoME: Mixture-of-Memory Embeddings for Context-Aware Sparse Lookup
+  [huggingFace] MLLMs Hallucinate when Information Distribution Drifts in Synergy Heads
+  [huggingFace] EvoOntology: A Self-Evolving Ontology Layer for Data Agents
+  [huggingFace] CodeMidas: Scaling Agentic Coding RL Environments from Code Itself
+  [huggingFace] GraphSkillEvo: Evolutionary Optimization of Graph-Structured Agent Skills
+  [huggingFace] MintAct: A Unified Visual Agent for Digital Environments
+  [huggingFace] When AI Reviews Train AI Reviewers: Scientific-Judgment Collapse and Mitigation
+  [huggingFace] Verifiable Social Reasoning for LLM Assistants
+  [huggingFace] Self-Evolving Search Index
+  [huggingFace] Sample Count Is Not Enough: Candidate-Generation Strategy Shapes the Energy and Performance of LLM Test-Time Scaling
+  [huggingFace] VākQA: A Benchmark and Evaluation Study for Telugu Spoken Factoid Question Answering
+  [huggingFace] Don't Mask the Environment: Observation Supervision Changes How Agents Explore Under RL
+  [huggingFace] PACT: Can Enterprise AI Assistants Be Trusted Under Pressure?
+  [huggingFace] RetireOPD: Self-Retiring On-Policy Distillation for Agentic Reinforcement Learning
+  [huggingFace] What Does Privileged Information Add to On-Policy Self-Distillation?
+  [huggingFace] DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression
+  [huggingFace] UFO: Chain-of-Evaluation for Omni-Condition Alignment in Multi-Modal Image Generation
+
+2026-09-22 (52 candidates)
+  [arxiv] Blind Thermodynamic Ontology Discovery from Anonymous Experiments
+  [arxiv] Leveraging Industrial Foundation Models at the Edge of Particle Physics Detectors via Distillation Learning and Hardware Co-design
+  [arxiv] Bayesian Filtering in Physical Systems via Test-time Trained Flow Matching
+  [arxiv] Discovering Physical Representation Languages
+  [arxiv] One to More, More to One: Category-Aware Iterative Expert Training for Software Engineering Agents
+  [arxiv] The Evidence Ladder for Reinforcement Learning in Healthcare: From Retrospective Policies to Trusted Interventions
+  [arxiv] Machine-Interpretable Information: Compiling Documents into Searchable and Readable Protocol States
+  [arxiv] CSC: Calibrated Simplicity for Conflict-Aware Social Bot Detection in the LLM Era
+  [arxiv] ValueDiff: Value-Geometric KV Cache Eviction for Sink-Suppressed LLMs
+  [arxiv] Latent Telepathy: Multi-Robot Communication with Self-Supervised Perceptual Latents
+  [arxiv] CTRL: Control-Based Time Series Forecasting with LLM-Guided Residual Learning
+  [arxiv] Robot World Models Are Not Invariant to How the Actions Are Written
+  [arxiv] Proximal Residual Value Functions for Consistent Planning and Real-Time Execution
+  [arxiv] Triggers and Diagnostics for LLM-Based Interpretability Failures in Active Inference Agents
+  [arxiv] Toscani-Fourier Distance on Probability Measures: Wasserstein Control, Topological Equivalence on Model Classes, and Duality
+  [arxiv] Real-Time Plasma State Prediction via FPGA-Accelerated Quantized Recurrent Probabilistic Neural Networks
+  [arxiv] Provably Efficient Reinforcement Learning in Continuous-Time Episodic MDPs with Poisson Decision Epochs
+  [arxiv] Perplexity Cost Understates What Activation Quantisation Breaks
+  [arxiv] An LLM-Assisted AutoML Framework for Intrusion Detection in IoT Networks
+  [arxiv] Counting and Covering in Nearest-Neighbour Representations of Boolean Functions
+  [arxiv] Measured Joules, Learned Routes: Learning to Route for Energy-Efficient LLM Serving
+  [arxiv] MolSC: Leveraging Substituent Contributions to Enhance Fine-grained Molecular Understanding in LLMs
+  [hackernews] Ask HN: Ceremonious Architecture in Times of AI
+  [hackernews] ECB will invest in tokenised securities, and settle trades on its own new rail
+  [hackernews] First NetHack Ascension by an LLM
+  [hackernews] Why Russia's New Jet-Powered Drones Are Harder to Stop
+  [huggingFace] SteerDuplex: Steerable Duplex Speech Dialogue Models
+  [huggingFace] From Pretraining to Proficiency: Real-World Subtask RL for Long-Horizon Manipulation with Minimal Human Intervention
+  [huggingFace] SiliconBench: Speed, Memory, and Fidelity for LLM Serving on Unified-Memory Desktops
+  [huggingFace] BI-Agent and BI-Bench: Towards Automating End-to-End Business Intelligence
+  [huggingFace] GAVEL: Graph World Models for Verified and Efficient Long-Horizon LLM Task Planning
+  [huggingFace] IntBMoE: Integrating Block-Level Conditioning into Expert Composition for Full-Participation Mixture-of-Experts
+  [huggingFace] OmniVChat: Synthesizing, Benchmarking, and Training for Native Audio-Visual Dialogue
+  [huggingFace] Geometry of Values: Task Vector Composition for Ethical Preference Alignment in Language Models
+  [huggingFace] TeleAntiFraud 2.0: A Refreshable, Profile-Grounded, and Audio-Based Benchmark for Telecom Fraud Detection
+  [huggingFace] MoME: Mixture-of-Memory Embeddings for Context-Aware Sparse Lookup
+  [huggingFace] MLLMs Hallucinate when Information Distribution Drifts in Synergy Heads
+  [huggingFace] EvoOntology: A Self-Evolving Ontology Layer for Data Agents
+  [huggingFace] CodeMidas: Scaling Agentic Coding RL Environments from Code Itself
+  [huggingFace] GraphSkillEvo: Evolutionary Optimization of Graph-Structured Agent Skills
+  [huggingFace] MintAct: A Unified Visual Agent for Digital Environments
+  [huggingFace] When AI Reviews Train AI Reviewers: Scientific-Judgment Collapse and Mitigation
+  [huggingFace] Verifiable Social Reasoning for LLM Assistants
+  [huggingFace] Self-Evolving Search Index
+  [huggingFace] Sample Count Is Not Enough: Candidate-Generation Strategy Shapes the Energy and Performance of LLM Test-Time Scaling
+  [huggingFace] VākQA: A Benchmark and Evaluation Study for Telugu Spoken Factoid Question Answering
+  [huggingFace] Don't Mask the Environment: Observation Supervision Changes How Agents Explore Under RL
+  [huggingFace] PACT: Can Enterprise AI Assistants Be Trusted Under Pressure?
+  [huggingFace] RetireOPD: Self-Retiring On-Policy Distillation for Agentic Reinforcement Learning
+  [huggingFace] What Does Privileged Information Add to On-Policy Self-Distillation?
+  [huggingFace] DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression
+  [huggingFace] UFO: Chain-of-Evaluation for Omni-Condition Alignment in Multi-Modal Image Generation
+
+2026-09-22 (51 candidates)
+  [arxiv] Blind Thermodynamic Ontology Discovery from Anonymous Experiments
+  [arxiv] Leveraging Industrial Foundation Models at the Edge of Particle Physics Detectors via Distillation Learning and Hardware Co-design
+  [arxiv] Bayesian Filtering in Physical Systems via Test-time Trained Flow Matching
+  [arxiv] Discovering Physical Representation Languages
+  [arxiv] One to More, More to One: Category-Aware Iterative Expert Training for Software Engineering Agents
+  [arxiv] The Evidence Ladder for Reinforcement Learning in Healthcare: From Retrospective Policies to Trusted Interventions
+  [arxiv] Machine-Interpretable Information: Compiling Documents into Searchable and Readable Protocol States
+  [arxiv] CSC: Calibrated Simplicity for Conflict-Aware Social Bot Detection in the LLM Era
+  [arxiv] ValueDiff: Value-Geometric KV Cache Eviction for Sink-Suppressed LLMs
+  [arxiv] Latent Telepathy: Multi-Robot Communication with Self-Supervised Perceptual Latents
+  [arxiv] CTRL: Control-Based Time Series Forecasting with LLM-Guided Residual Learning
+  [arxiv] Robot World Models Are Not Invariant to How the Actions Are Written
+  [arxiv] Proximal Residual Value Functions for Consistent Planning and Real-Time Execution
+  [arxiv] Triggers and Diagnostics for LLM-Based Interpretability Failures in Active Inference Agents
+  [arxiv] Toscani-Fourier Distance on Probability Measures: Wasserstein Control, Topological Equivalence on Model Classes, and Duality
+  [arxiv] Real-Time Plasma State Prediction via FPGA-Accelerated Quantized Recurrent Probabilistic Neural Networks
+  [arxiv] Provably Efficient Reinforcement Learning in Continuous-Time Episodic MDPs with Poisson Decision Epochs
+  [arxiv] Perplexity Cost Understates What Activation Quantisation Breaks
+  [arxiv] An LLM-Assisted AutoML Framework for Intrusion Detection in IoT Networks
+  [arxiv] Counting and Covering in Nearest-Neighbour Representations of Boolean Functions
+  [arxiv] Measured Joules, Learned Routes: Learning to Route for Energy-Efficient LLM Serving
+  [arxiv] MolSC: Leveraging Substituent Contributions to Enhance Fine-grained Molecular Understanding in LLMs
+  [hackernews] Ask HN: Ceremonious Architecture in Times of AI
+  [hackernews] ECB will invest in tokenised securities, and settle trades on its own new rail
+  [hackernews] First NetHack Ascension by an LLM
+  [huggingFace] SteerDuplex: Steerable Duplex Speech Dialogue Models
+  [huggingFace] From Pretraining to Proficiency: Real-World Subtask RL for Long-Horizon Manipulation with Minimal Human Intervention
+  [huggingFace] SiliconBench: Speed, Memory, and Fidelity for LLM Serving on Unified-Memory Desktops
+  [huggingFace] BI-Agent and BI-Bench: Towards Automating End-to-End Business Intelligence
+  [huggingFace] GAVEL: Graph World Models for Verified and Efficient Long-Horizon LLM Task Planning
+  [huggingFace] IntBMoE: Integrating Block-Level Conditioning into Expert Composition for Full-Participation Mixture-of-Experts
+  [huggingFace] OmniVChat: Synthesizing, Benchmarking, and Training for Native Audio-Visual Dialogue
+  [huggingFace] Geometry of Values: Task Vector Composition for Ethical Preference Alignment in Language Models
+  [huggingFace] TeleAntiFraud 2.0: A Refreshable, Profile-Grounded, and Audio-Based Benchmark for Telecom Fraud Detection
+  [huggingFace] MoME: Mixture-of-Memory Embeddings for Context-Aware Sparse Lookup
+  [huggingFace] MLLMs Hallucinate when Information Distribution Drifts in Synergy Heads
+  [huggingFace] EvoOntology: A Self-Evolving Ontology Layer for Data Agents
+  [huggingFace] CodeMidas: Scaling Agentic Coding RL Environments from Code Itself
+  [huggingFace] GraphSkillEvo: Evolutionary Optimization of Graph-Structured Agent Skills
+  [huggingFace] MintAct: A Unified Visual Agent for Digital Environments
+  [huggingFace] When AI Reviews Train AI Reviewers: Scientific-Judgment Collapse and Mitigation
+  [huggingFace] Verifiable Social Reasoning for LLM Assistants
+  [huggingFace] Self-Evolving Search Index
+  [huggingFace] Sample Count Is Not Enough: Candidate-Generation Strategy Shapes the Energy and Performance of LLM Test-Time Scaling
+  [huggingFace] VākQA: A Benchmark and Evaluation Study for Telugu Spoken Factoid Question Answering
+  [huggingFace] Don't Mask the Environment: Observation Supervision Changes How Agents Explore Under RL
+  [huggingFace] PACT: Can Enterprise AI Assistants Be Trusted Under Pressure?
+  [huggingFace] RetireOPD: Self-Retiring On-Policy Distillation for Agentic Reinforcement Learning
+  [huggingFace] What Does Privileged Information Add to On-Policy Self-Distillation?
+  [huggingFace] DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression
+  [huggingFace] UFO: Chain-of-Evaluation for Omni-Condition Alignment in Multi-Modal Image Generation
+
+2026-09-22 (51 candidates)
+  [arxiv] Blind Thermodynamic Ontology Discovery from Anonymous Experiments
+  [arxiv] Leveraging Industrial Foundation Models at the Edge of Particle Physics Detectors via Distillation Learning and Hardware Co-design
+  [arxiv] Bayesian Filtering in Physical Systems via Test-time Trained Flow Matching
+  [arxiv] Discovering Physical Representation Languages
+  [arxiv] One to More, More to One: Category-Aware Iterative Expert Training for Software Engineering Agents
+  [arxiv] The Evidence Ladder for Reinforcement Learning in Healthcare: From Retrospective Policies to Trusted Interventions
+  [arxiv] Machine-Interpretable Information: Compiling Documents into Searchable and Readable Protocol States
+  [arxiv] CSC: Calibrated Simplicity for Conflict-Aware Social Bot Detection in the LLM Era
+  [arxiv] ValueDiff: Value-Geometric KV Cache Eviction for Sink-Suppressed LLMs
+  [arxiv] Latent Telepathy: Multi-Robot Communication with Self-Supervised Perceptual Latents
+  [arxiv] CTRL: Control-Based Time Series Forecasting with LLM-Guided Residual Learning
+  [arxiv] Robot World Models Are Not Invariant to How the Actions Are Written
+  [arxiv] Proximal Residual Value Functions for Consistent Planning and Real-Time Execution
+  [arxiv] Triggers and Diagnostics for LLM-Based Interpretability Failures in Active Inference Agents
+  [arxiv] Toscani-Fourier Distance on Probability Measures: Wasserstein Control, Topological Equivalence on Model Classes, and Duality
+  [arxiv] Real-Time Plasma State Prediction via FPGA-Accelerated Quantized Recurrent Probabilistic Neural Networks
+  [arxiv] Provably Efficient Reinforcement Learning in Continuous-Time Episodic MDPs with Poisson Decision Epochs
+  [arxiv] Perplexity Cost Understates What Activation Quantisation Breaks
+  [arxiv] An LLM-Assisted AutoML Framework for Intrusion Detection in IoT Networks
+  [arxiv] Counting and Covering in Nearest-Neighbour Representations of Boolean Functions
+  [arxiv] Measured Joules, Learned Routes: Learning to Route for Energy-Efficient LLM Serving
+  [arxiv] MolSC: Leveraging Substituent Contributions to Enhance Fine-grained Molecular Understanding in LLMs
+  [hackernews] Ask HN: Ceremonious Architecture in Times of AI
+  [hackernews] ECB will invest in tokenised securities, and settle trades on its own new rail
+  [hackernews] First NetHack Ascension by an LLM
+  [huggingFace] SteerDuplex: Steerable Duplex Speech Dialogue Models
+  [huggingFace] From Pretraining to Proficiency: Real-World Subtask RL for Long-Horizon Manipulation with Minimal Human Intervention
+  [huggingFace] SiliconBench: Speed, Memory, and Fidelity for LLM Serving on Unified-Memory Desktops
+  [huggingFace] BI-Agent and BI-Bench: Towards Automating End-to-End Business Intelligence
+  [huggingFace] GAVEL: Graph World Models for Verified and Efficient Long-Horizon LLM Task Planning
+  [huggingFace] IntBMoE: Integrating Block-Level Conditioning into Expert Composition for Full-Participation Mixture-of-Experts
+  [huggingFace] OmniVChat: Synthesizing, Benchmarking, and Training for Native Audio-Visual Dialogue
+  [huggingFace] Geometry of Values: Task Vector Composition for Ethical Preference Alignment in Language Models
+  [huggingFace] TeleAntiFraud 2.0: A Refreshable, Profile-Grounded, and Audio-Based Benchmark for Telecom Fraud Detection
+  [huggingFace] MoME: Mixture-of-Memory Embeddings for Context-Aware Sparse Lookup
+  [huggingFace] MLLMs Hallucinate when Information Distribution Drifts in Synergy Heads
+  [huggingFace] EvoOntology: A Self-Evolving Ontology Layer for Data Agents
+  [huggingFace] CodeMidas: Scaling Agentic Coding RL Environments from Code Itself
+  [huggingFace] GraphSkillEvo: Evolutionary Optimization of Graph-Structured Agent Skills
+  [huggingFace] MintAct: A Unified Visual Agent for Digital Environments
+  [huggingFace] When AI Reviews Train AI Reviewers: Scientific-Judgment Collapse and Mitigation
+  [huggingFace] Verifiable Social Reasoning for LLM Assistants
+  [huggingFace] Self-Evolving Search Index
+  [huggingFace] Sample Count Is Not Enough: Candidate-Generation Strategy Shapes the Energy and Performance of LLM Test-Time Scaling
+  [huggingFace] VākQA: A Benchmark and Evaluation Study for Telugu Spoken Factoid Question Answering
+  [huggingFace] Don't Mask the Environment: Observation Supervision Changes How Agents Explore Under RL
+  [huggingFace] PACT: Can Enterprise AI Assistants Be Trusted Under Pressure?
+  [huggingFace] RetireOPD: Self-Retiring On-Policy Distillation for Agentic Reinforcement Learning
+  [huggingFace] What Does Privileged Information Add to On-Policy Self-Distillation?
+  [huggingFace] DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression
+  [huggingFace] UFO: Chain-of-Evaluation for Omni-Condition Alignment in Multi-Modal Image Generation
+
+2026-09-22 (51 candidates)
+  [arxiv] Blind Thermodynamic Ontology Discovery from Anonymous Experiments
+  [arxiv] Leveraging Industrial Foundation Models at the Edge of Particle Physics Detectors via Distillation Learning and Hardware Co-design
+  [arxiv] Bayesian Filtering in Physical Systems via Test-time Trained Flow Matching
+  [arxiv] Discovering Physical Representation Languages
+  [arxiv] One to More, More to One: Category-Aware Iterative Expert Training for Software Engineering Agents
+  [arxiv] The Evidence Ladder for Reinforcement Learning in Healthcare: From Retrospective Policies to Trusted Interventions
+  [arxiv] Machine-Interpretable Information: Compiling Documents into Searchable and Readable Protocol States
+  [arxiv] CSC: Calibrated Simplicity for Conflict-Aware Social Bot Detection in the LLM Era
+  [arxiv] ValueDiff: Value-Geometric KV Cache Eviction for Sink-Suppressed LLMs
+  [arxiv] Latent Telepathy: Multi-Robot Communication with Self-Supervised Perceptual Latents
+  [arxiv] CTRL: Control-Based Time Series Forecasting with LLM-Guided Residual Learning
+  [arxiv] Robot World Models Are Not Invariant to How the Actions Are Written
+  [arxiv] Proximal Residual Value Functions for Consistent Planning and Real-Time Execution
+  [arxiv] Triggers and Diagnostics for LLM-Based Interpretability Failures in Active Inference Agents
+  [arxiv] Toscani-Fourier Distance on Probability Measures: Wasserstein Control, Topological Equivalence on Model Classes, and Duality
+  [arxiv] Real-Time Plasma State Prediction via FPGA-Accelerated Quantized Recurrent Probabilistic Neural Networks
+  [arxiv] Provably Efficient Reinforcement Learning in Continuous-Time Episodic MDPs with Poisson Decision Epochs
+  [arxiv] Perplexity Cost Understates What Activation Quantisation Breaks
+  [arxiv] An LLM-Assisted AutoML Framework for Intrusion Detection in IoT Networks
+  [arxiv] Counting and Covering in Nearest-Neighbour Representations of Boolean Functions
+  [arxiv] Measured Joules, Learned Routes: Learning to Route for Energy-Efficient LLM Serving
+  [arxiv] MolSC: Leveraging Substituent Contributions to Enhance Fine-grained Molecular Understanding in LLMs
+  [hackernews] Ask HN: Ceremonious Architecture in Times of AI
+  [hackernews] ECB will invest in tokenised securities, and settle trades on its own new rail
+  [huggingFace] One to More, More to One: Category-Aware Iterative Expert Training for Software Engineering Agents
+  [huggingFace] SteerDuplex: Steerable Duplex Speech Dialogue Models
+  [huggingFace] From Pretraining to Proficiency: Real-World Subtask RL for Long-Horizon Manipulation with Minimal Human Intervention
+  [huggingFace] SiliconBench: Speed, Memory, and Fidelity for LLM Serving on Unified-Memory Desktops
+  [huggingFace] BI-Agent and BI-Bench: Towards Automating End-to-End Business Intelligence
+  [huggingFace] GAVEL: Graph World Models for Verified and Efficient Long-Horizon LLM Task Planning
+  [huggingFace] IntBMoE: Integrating Block-Level Conditioning into Expert Composition for Full-Participation Mixture-of-Experts
+  [huggingFace] OmniVChat: Synthesizing, Benchmarking, and Training for Native Audio-Visual Dialogue
+  [huggingFace] Geometry of Values: Task Vector Composition for Ethical Preference Alignment in Language Models
+  [huggingFace] TeleAntiFraud 2.0: A Refreshable, Profile-Grounded, and Audio-Based Benchmark for Telecom Fraud Detection
+  [huggingFace] MoME: Mixture-of-Memory Embeddings for Context-Aware Sparse Lookup
+  [huggingFace] MLLMs Hallucinate when Information Distribution Drifts in Synergy Heads
+  [huggingFace] EvoOntology: A Self-Evolving Ontology Layer for Data Agents
+  [huggingFace] CodeMidas: Scaling Agentic Coding RL Environments from Code Itself
+  [huggingFace] GraphSkillEvo: Evolutionary Optimization of Graph-Structured Agent Skills
+  [huggingFace] MintAct: A Unified Visual Agent for Digital Environments
+  [huggingFace] When AI Reviews Train AI Reviewers: Scientific-Judgment Collapse and Mitigation
+  [huggingFace] Verifiable Social Reasoning for LLM Assistants
+  [huggingFace] Self-Evolving Search Index
+  [huggingFace] Sample Count Is Not Enough: Candidate-Generation Strategy Shapes the Energy and Performance of LLM Test-Time Scaling
+  [huggingFace] VākQA: A Benchmark and Evaluation Study for Telugu Spoken Factoid Question Answering
+  [huggingFace] Don't Mask the Environment: Observation Supervision Changes How Agents Explore Under RL
+  [huggingFace] PACT: Can Enterprise AI Assistants Be Trusted Under Pressure?
+  [huggingFace] RetireOPD: Self-Retiring On-Policy Distillation for Agentic Reinforcement Learning
+  [huggingFace] What Does Privileged Information Add to On-Policy Self-Distillation?
+  [huggingFace] DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression
+  [huggingFace] UFO: Chain-of-Evaluation for Omni-Condition Alignment in Multi-Modal Image Generation

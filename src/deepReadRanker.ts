@@ -21,16 +21,16 @@ Respond ONLY with valid JSON in this exact shape, nothing else, no commentary, n
 {"novelty": <1-5>, "rigor": <1-7>, "robustness": <1-5>, "significance": <1-7>, "justification": "<one sentence>"}`;
 
 /** Removes a markdown code fence around JSON, if present. Claude sometimes wraps JSON responses in ```json blocks. */
-function stripCodeFence(text: string): string {
-  const fenceMatch = text.match(/```(?:json)?\s*([\s\S]*?)\s*```/);
-  if (fenceMatch) {
-    return fenceMatch[1] ?? text;
+/** Extracts a JSON object from Claude's response, ignoring any code fences, backticks, or prose around it. */
+function extractJson(text: string): string {
+  const firstBrace = text.indexOf("{");
+  const lastBrace = text.lastIndexOf("}");
+
+  if (firstBrace === -1 || lastBrace === -1 || lastBrace < firstBrace) {
+    return text;
   }
 
-  // MARKER: no fence found. Try to find a bare JSON object anywhere in the text,
-  // in case Claude added prose before or after it without a code fence.
-  const jsonMatch = text.match(/\{[\s\S]*\}/);
-  return jsonMatch ? jsonMatch[0] : text;
+  return text.slice(firstBrace, lastBrace + 1);
 }
 
 
@@ -56,7 +56,7 @@ async function scoreOnePaper(paper: PaperRecord): Promise<ScoredPaper> {
 
   let parsed: any;
   try {
-    parsed = JSON.parse(stripCodeFence(textBlock.text.trim()));
+    parsed = JSON.parse(extractJson(textBlock.text.trim()));
   } catch (parseError) {
     throw new Error(`Claude's response was not valid JSON for "${paper.title}": ${textBlock.text}`);
   }
