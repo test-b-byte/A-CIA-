@@ -1,4 +1,4 @@
-![Agent Op Structure](Agent_OpStructure.png)
+![Agent Op Structure](Architecture_Updated.png)
 
 
 # ACIA pipeline — stage reference
