@@ -1318,3 +1318,92 @@
   [huggingFace] What Does Privileged Information Add to On-Policy Self-Distillation?
   [huggingFace] DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression
   [huggingFace] UFO: Chain-of-Evaluation for Omni-Condition Alignment in Multi-Modal Image Generation
+
+2026-09-22 (43 candidates)
+  [arxiv] onPanda: Efficient Annotation of On-Policy Alignment Data for LLMs and Agents via Token-Level Correction
+  [arxiv] LoRA-generating hypernetworks for efficient on-device LLM generative personalization
+  [arxiv] RRSI: Regularized Recursive Self-Improvement of Agent Harnesses
+  [arxiv] Rare Event Estimation via Iterative Unalignment
+  [arxiv] OSWorld-Pro: Process-based Evaluation for Computer Use Agents
+  [arxiv] Complex KDA: Understanding and Enhancing the Expressivity of Kimi Delta Attention
+  [arxiv] Reinforcement Learning in Operational Research: A Technical Review and Practical Roadmap
+  [arxiv] Offline Reinforcement Learning for Distribution-Grid Protection
+  [arxiv] iSDFT: Information-Proximal Self-Distillation for Continual Learning in LLMs
+  [arxiv] Augmented Hypothesis Testing with Persona-Based LLM Simulations
+  [arxiv] Learning tactile perception from high-bandwidth single-point sensing
+  [arxiv] Lifted Bellman Linear Programming for Offline Reinforcement Learning
+  [arxiv] Fathom-Vaidya: Advancing Medical Reasoning with Rubric-Based Rewards
+  [arxiv] RAILS: Retrieval-Augmented Incremental LLM Clustering at Scale
+  [hackernews] ASML Executive Says It Has No Sales in Europe
+  [hackernews] Barbara Mazzolai Wants to Build a New Field of Robotics
+  [hackernews] Xeno-Interpretability: Investigating the Alien Minds of LLMs
+  [huggingFace] Realtime-Venus: A full-duplex interaction system with asynchronous delegation
+  [huggingFace] TAPe+ML: A Compact Structured Representation for Multi-Task Computer Vision
+  [huggingFace] EDGEGEN: Improving Tool-Calling Agents Beyond Happy Paths with Synthetic Edge Case Generation
+  [huggingFace] Complex KDA: Understanding and Enhancing the Expressivity of Kimi Delta Attention
+  [huggingFace] Document Retrieval-Aware Chunking (D-RAC): Universal Retrieval-Aware Ingestion of Enterprise Documents via PDF Normalization and Multimodal Markdown Conversion
+  [huggingFace] Deep Persona: A Psychologically Grounded Architecture and Evaluation Framework for Role-Playing Agents and Simulations
+  [huggingFace] onPanda: Efficient Annotation of On-Policy Alignment Data for LLMs and Agents via Token-Level Correction
+  [huggingFace] Harness-Zero: Harness Distillation via Agent-as-Harness
+  [huggingFace] Measuring the Checker: Mutation Analysis for GPU-Kernel Benchmark Oracles
+  [huggingFace] Grounded Action Model: 3D Grounding as a Foundation for Robotics
+  [huggingFace] Jev-Mem: System-One-Controlled Agentic Memory for Efficient AI Agents
+  [huggingFace] VideoGen-Agent: Reinforcing Video Generation Agents
+  [huggingFace] RRSI: Regularized Recursive Self-Improvement of Agent Harnesses
+  [huggingFace] Transferring the Intelligence of VLMs to Robotic Control
+  [huggingFace] One to More, More to One: Category-Aware Iterative Expert Training for Software Engineering Agents
+  [huggingFace] SteerDuplex: Steerable Duplex Speech Dialogue Models
+  [huggingFace] From Pretraining to Proficiency: Real-World Subtask RL for Long-Horizon Manipulation with Minimal Human Intervention
+  [huggingFace] SiliconBench: Speed, Memory, and Fidelity for LLM Serving on Unified-Memory Desktops
+  [huggingFace] BI-Agent and BI-Bench: Towards Automating End-to-End Business Intelligence
+  [huggingFace] GAVEL: Graph World Models for Verified and Efficient Long-Horizon LLM Task Planning
+  [huggingFace] IntBMoE: Integrating Block-Level Conditioning into Expert Composition for Full-Participation Mixture-of-Experts
+  [huggingFace] OmniVChat: Synthesizing, Benchmarking, and Training for Native Audio-Visual Dialogue
+  [huggingFace] Geometry of Values: Task Vector Composition for Ethical Preference Alignment in Language Models
+  [huggingFace] TeleAntiFraud 2.0: A Refreshable, Profile-Grounded, and Audio-Based Benchmark for Telecom Fraud Detection
+  [huggingFace] MoME: Mixture-of-Memory Embeddings for Context-Aware Sparse Lookup
+  [huggingFace] MLLMs Hallucinate when Information Distribution Drifts in Synergy Heads
+
+2026-09-23 (42 candidates)
+  [arxiv] SpeakerMem-R1: Speaker-Centered Dual-Track Memory for Multi-Party Dialogue
+  [arxiv] The Sirens' Song: When Proximal Background Context Overshadows Distant Evidence
+  [arxiv] Optimal Sequential Annotations for Off-Policy Evaluation
+  [arxiv] PROSWIN: Probabilistic Solar Wind Speed Forecasting Using Deep Distributional Regression From Solar Images
+  [arxiv] A Spectral Theory of Grokking: Weight Decay induces Feature Learning
+  [arxiv] MAGIC: Mixed-Granularity Agent Graphs via Incremental Construction with Dense-Reward Reinforcement Learning
+  [arxiv] Discovery-Driven Integration of Disjoint Tables via Text
+  [arxiv] Greedy Decoding Is Not Precision-Invariant: Cross-Precision Output Divergence in LLM Inference
+  [arxiv] When Recursive Models Finish Computing
+  [arxiv] PP-Net: A Hybrid Physical-Prior Neural Network for Scattered Light Removal in Biomedical Images on Embedded Devices
+  [arxiv] Recursive self-improvement of AI research agents
+  [arxiv] TimeInteract: Towards Real-Time Interactive Intelligence for Streaming Time Series
+  [arxiv] On the Lexical Superstition of Large Language Models for Code Comprehension: Re-evaluation on Code of Low Lexical Quality
+  [arxiv] PACT: From Credit Assignment to Critic Alignment
+  [arxiv] HYDRA: Proactive Android Malware Drift Adaptation via Hierarchical Graph Contrastive Learning
+  [arxiv] Disaggregated Quantization: Specializing LLM Prefill and Decode
+  [arxiv] Error Bounds for Statistical Estimators in BTL Model with Parametric Multivariate Utility Functions
+  [hackernews] Jev-rs: a Rust crate to turn a LLM to serve jev
+  [hackernews] Jev-serve: Run latest qwen3.8, all LLM models, mlx-supported
+  [hackernews] Early-2000s investor decks were their own art form
+  [huggingFace] JEV-as-a-Judge: Accept When Confident, Escalate When Unsure
+  [huggingFace] Emergent Collusion in Long-Horizon LLM Agent Interaction
+  [huggingFace] The Tasteful Agent: Measuring and Improving Taste in Long-Horizon Tasks
+  [huggingFace] ALPINE: Adaptive Localization for Parameter- and Sample-Efficient Few-Shot Learning
+  [huggingFace] Bellman Policy Optimization
+  [huggingFace] From Pattern Recognizers to Personalized Companions: A Survey of Large Language Models in Mental Health
+  [huggingFace] Recursive self-improvement of AI research agents
+  [huggingFace] Flash-dLLM: IO-Aware KV Caching and Parallel Decoding for Fast, Memory-Efficient Diffusion LLMs
+  [huggingFace] RULER: Instance-aware Rubric Rewards for SVG Generation
+  [huggingFace] Towards Full Pipeline FP8 Reinforcement Learning for LLMs
+  [huggingFace] Realtime-Venus: A full-duplex interaction system with asynchronous delegation
+  [huggingFace] TAPe+ML: A Compact Structured Representation for Multi-Task Computer Vision
+  [huggingFace] EDGEGEN: Improving Tool-Calling Agents Beyond Happy Paths with Synthetic Edge Case Generation
+  [huggingFace] Complex KDA: Understanding and Enhancing the Expressivity of Kimi Delta Attention
+  [huggingFace] Document Retrieval-Aware Chunking (D-RAC): Universal Retrieval-Aware Ingestion of Enterprise Documents via PDF Normalization and Multimodal Markdown Conversion
+  [huggingFace] Deep Persona: A Psychologically Grounded Architecture and Evaluation Framework for Role-Playing Agents and Simulations
+  [huggingFace] onPanda: Efficient Annotation of On-Policy Alignment Data for LLMs and Agents via Token-Level Correction
+  [huggingFace] Harness-Zero: Harness Distillation via Agent-as-Harness
+  [huggingFace] Measuring the Checker: Mutation Analysis for GPU-Kernel Benchmark Oracles
+  [huggingFace] Grounded Action Model: 3D Grounding as a Foundation for Robotics
+  [huggingFace] Jev-Mem: System-One-Controlled Agentic Memory for Efficient AI Agents
+  [huggingFace] VideoGen-Agent: Reinforcing Video Generation Agents
