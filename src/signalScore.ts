@@ -119,38 +119,3 @@ function scorePaper(paper: PaperRecord): number {
 export function rankBySignal(papers: PaperRecord[]): PaperRecord[] {
   return [...papers].sort((paperA, paperB) => scorePaper(paperB) - scorePaper(paperA));
 }
-
-import { fetchArxivPapers } from "./arxivCollector.js";
-import { parseArxivResponse } from "./arxivAdapter.js";
-import { fetchHnStories } from "./hnCollector.js";
-import { parseHnResponse } from "./hnAdapter.js";
-import { fetchHuggingFacePapers } from "./huggingFaceCollector.js";
-import { parseHuggingFaceResponse } from "./huggingFaceAdapter.js";
-import { filterByTopics } from "./hardFilter.js";
-import { filterOutSeen } from "./seenFilter.js";
-import { logCandidates } from "./dailyLog.js";
-
-const arxivRaw = await fetchArxivPapers("cs.LG");
-const arxivPapers = parseArxivResponse(arxivRaw);
-console.log(`arXiv: ${arxivPapers.length}`);
-
-const hnRaw = await fetchHnStories();
-const hnPapers = parseHnResponse(hnRaw);
-console.log(`HN: ${hnPapers.length}`);
-
-const hfRaw = await fetchHuggingFacePapers();
-const hfPapers = parseHuggingFaceResponse(hfRaw);
-console.log(`Hugging Face: ${hfPapers.length}`);
-
-const allPapers = [...arxivPapers, ...hnPapers, ...hfPapers];
-const topicFiltered = filterByTopics(allPapers);
-const unseenFiltered = filterOutSeen(topicFiltered);
-
-logCandidates(unseenFiltered);
-console.log(`Hacker Net raw: ${hnPapers.length}`);
-
-const hnFiltered = filterByTopics(hnPapers);
-console.log(`Hacker Net after filter alone: ${hnFiltered.length}`);
-if (hnFiltered.length > 0) {
-  console.log(hnFiltered.map((p) => p.title));
-}

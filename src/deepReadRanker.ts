@@ -35,7 +35,7 @@ function extractJson(text: string): string {
 
 
 /** Sends one paper to Claude for rubric scoring. Throws if the response is not valid, parseable JSON. */
-async function scoreOnePaper(paper: PaperRecord): Promise<ScoredPaper> {
+export async function scoreOnePaper(paper: PaperRecord): Promise<ScoredPaper> {
   const response = await client.messages.create({
     model: "claude-haiku-4-5",
     max_tokens: 300,
@@ -81,48 +81,4 @@ async function scoreOnePaper(paper: PaperRecord): Promise<ScoredPaper> {
     totalScore: novelty + rigor + robustness + significance,
     justification: justification ?? "",
   };
-}
-
-import { fetchArxivPapers } from "./arxivCollector.js";
-import { parseArxivResponse } from "./arxivAdapter.js";
-import { fetchHnStories } from "./hnCollector.js";
-import { parseHnResponse } from "./hnAdapter.js";
-import { fetchHuggingFacePapers } from "./huggingFaceCollector.js";
-import { parseHuggingFaceResponse } from "./huggingFaceAdapter.js";
-import { filterByTopics } from "./hardFilter.js";
-import { rankBySignal } from "./signalScore.js";
-import { takeShortlistPerSource } from "./shortlist.js";
-
-const arxivRaw = await fetchArxivPapers("cs.LG");
-const arxivPapers = parseArxivResponse(arxivRaw);
-
-const hnRaw = await fetchHnStories();
-const hnPapers = parseHnResponse(hnRaw);
-
-const hfRaw = await fetchHuggingFacePapers();
-const hfPapers = parseHuggingFaceResponse(hfRaw);
-
-const allPapers = [...arxivPapers, ...hnPapers, ...hfPapers];
-const filtered = filterByTopics(allPapers);
-const ranked = rankBySignal(filtered);
-const shortlist = takeShortlistPerSource(ranked, 5);
-
-console.log(`Scoring ${shortlist.length} papers with Claude...`);
-
-const scoredPapers: ScoredPaper[] = [];
-
-for (const paper of shortlist) {
-  const scored = await scoreOnePaper(paper);
-  scoredPapers.push(scored);
-  console.log(`Scored: [${scored.paper.source}] ${scored.paper.title} — Total: ${scored.totalScore}`);
-}
-
-const topThree = [...scoredPapers].sort((a, b) => b.totalScore - a.totalScore).slice(0, 3);
-
-console.log("\n--- Top 3 for full write-up ---");
-for (const scored of topThree) {
-  console.log(`\n[${scored.paper.source}] ${scored.paper.title}`);
-  console.log(`Novelty: ${scored.novelty}, Rigor: ${scored.rigor}, Robustness: ${scored.robustness}, Significance: ${scored.significance}`);
-  console.log(`Total: ${scored.totalScore}`);
-  console.log(`Why: ${scored.justification}`);
 }

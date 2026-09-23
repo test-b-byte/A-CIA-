@@ -87,37 +87,3 @@ export async function writeFiveW(scored: ScoredPaper): Promise<string> {
   return `${paper.title}\n\n${body}`;
 }
 
-import { fetchArxivPapers } from "./arxivCollector.js";
-import { parseArxivResponse } from "./arxivAdapter.js";
-import { fetchHnStories } from "./hnCollector.js";
-import { parseHnResponse } from "./hnAdapter.js";
-import { fetchHuggingFacePapers } from "./huggingFaceCollector.js";
-import { parseHuggingFaceResponse } from "./huggingFaceAdapter.js";
-import { filterByTopics } from "./hardFilter.js";
-import { rankBySignal } from "./signalScore.js";
-import { takeShortlistPerSource } from "./shortlist.js";
-
-const arxivRaw = await fetchArxivPapers("cs.LG");
-const arxivPapers = parseArxivResponse(arxivRaw);
-
-const hnRaw = await fetchHnStories();
-const hnPapers = parseHnResponse(hnRaw);
-
-const hfRaw = await fetchHuggingFacePapers();
-const hfPapers = parseHuggingFaceResponse(hfRaw);
-
-const allPapers = [...arxivPapers, ...hnPapers, ...hfPapers];
-const filtered = filterByTopics(allPapers);
-const ranked = rankBySignal(filtered);
-const shortlist = takeShortlistPerSource(ranked, 5);
-
-console.log("=== SHORTLIST SUMMARY ===\n");
-console.log(buildShortlistSummary(shortlist));
-
-console.log("\n\n=== TOP 3, 5W FORMAT ===\n");
-for (const paper of shortlist.slice(0, 3)) {
-  const fakeScored = { paper } as any;
-  const summary = await writeFiveW(fakeScored);
-  console.log(summary);
-  console.log("\n---\n");
-}

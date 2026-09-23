@@ -33,28 +33,3 @@ export function takeShortlistPerSource(rankedPapers: PaperRecord[], perSourceCou
   return shortlist;
 }
 
-import { fetchArxivPapers } from "./arxivCollector.js";
-import { parseArxivResponse } from "./arxivAdapter.js";
-import { fetchHnStories } from "./hnCollector.js";
-import { parseHnResponse } from "./hnAdapter.js";
-import { fetchHuggingFacePapers } from "./huggingFaceCollector.js";
-import { parseHuggingFaceResponse } from "./huggingFaceAdapter.js";
-import { filterByTopics } from "./hardFilter.js";
-import { rankBySignal } from "./signalScore.js";
-
-const arxivRaw = await fetchArxivPapers("cs.LG");
-const arxivPapers = parseArxivResponse(arxivRaw);
-
-const hnRaw = await fetchHnStories();
-const hnPapers = parseHnResponse(hnRaw);
-
-const hfRaw = await fetchHuggingFacePapers();
-const hfPapers = parseHuggingFaceResponse(hfRaw);
-
-const allPapers = [...arxivPapers, ...hnPapers, ...hfPapers];
-const filtered = filterByTopics(allPapers);
-const ranked = rankBySignal(filtered);
-const shortlisted = takeShortlistPerSource(ranked, 5);
-
-console.log(`Ranked pool: ${ranked.length}. Shortlist: ${shortlisted.length}`);
-console.log(shortlisted.map((paper) => `[${paper.source}] ${paper.title}`));

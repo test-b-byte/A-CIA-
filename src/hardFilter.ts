@@ -46,26 +46,3 @@ export function filterByTopics(papers: PaperRecord[]): PaperRecord[] {
     return matchesAnyTopic(paper, relevantTopics);
   });
 }
-
-import { fetchArxivPapers } from "./arxivCollector.js";
-import { parseArxivResponse } from "./arxivAdapter.js";
-import { fetchHnStories } from "./hnCollector.js";
-import { parseHnResponse } from "./hnAdapter.js";
-import { fetchHuggingFacePapers } from "./huggingFaceCollector.js";
-import { parseHuggingFaceResponse } from "./huggingFaceAdapter.js";
-
-const arxivRaw = await fetchArxivPapers("cs.LG");
-const arxivPapers = parseArxivResponse(arxivRaw);
-
-const hnRaw = await fetchHnStories();
-const hnPapers = parseHnResponse(hnRaw);
-
-const hfRaw = await fetchHuggingFacePapers();
-const hfPapers = parseHuggingFaceResponse(hfRaw);
-
-const allPapers = [...arxivPapers, ...hnPapers, ...hfPapers];
-const filteredPapers = filterByTopics(allPapers);
-
-console.log(`arXiv: ${arxivPapers.length}, HN: ${hnPapers.length}, HF: ${hfPapers.length}`);
-console.log(`After filtering: ${filteredPapers.length}`);
-console.log(filteredPapers.map((paper) => `[${paper.source}] ${paper.title}`));
